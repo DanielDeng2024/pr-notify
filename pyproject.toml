@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pr-notify"
+version = "0.1.0"
+description = "Poll GitHub via gh and notify on PR activity that needs you"
+requires-python = ">=3.9"
+
+[project.scripts]
+pr-notify = "pr_notify.cli:main"
+
+[tool.setuptools]
+packages = ["pr_notify"]
